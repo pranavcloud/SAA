@@ -1,0 +1,16 @@
+#!/bin/bash
+yum update -y
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+cd /var/www/html
+echo "<html><h1>Welcome to the EC2 Instance!</h1></html>" > index.html
+
+
+
+
+
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y
+
+stress -c 1 -t 400s
