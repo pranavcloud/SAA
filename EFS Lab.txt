@@ -1,0 +1,20 @@
+1)Create an EFS file system in all subnets in all AZs with default security groups.
+
+2)Create 2 EC2 Instances with Amazon Linux AMI and use this script in Additional Details:  
+Create a security group named web-dmz havig rules of HTTP and SSH allowing traffic from anywhere(0.0.0.0/0)
+EC2 Bootstrap script:
+#!/bin/bash
+yum update -y
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+yum install amazon-efs-utils -y
+
+3)Add security rule in default security group whith rule as NFS and source as web-dmz security group
+4)Open Putty(Connect via SSH) and check whether instance has apache installed.(cd /var/www/html)
+[Commands on EC2 Instance:
+Follow mount instructions on EFS Console]
+1)Mount with TLS helper:
+mount -t efs -o tls fs-2bef52da:/ /var/www/html
+2)Create an index.html with sample html text in /var/www/html directory
+3)Access it from another instance.
