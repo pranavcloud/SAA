@@ -18,3 +18,4 @@ Follow mount instructions on EFS Console]
 mount -t efs -o tls fs-2bef52da:/ /var/www/html
 2)Create an index.html with sample html text in /var/www/html directory
 3)Access it from another instance.
+[Take a look at the recording of EFS to understand the process]
