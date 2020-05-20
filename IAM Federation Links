@@ -1,0 +1,6 @@
+Process:
+https://aws.amazon.com/identity/saml/
+Set up Custom Broker:
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-custom-url.html
+Social Sign in :
+https://docs.aws.amazon.com/cognito/latest/developerguide/facebook.html
