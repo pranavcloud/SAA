@@ -1,0 +1,17 @@
+DynamoDB Table Creation:
+https://aws.amazon.com/getting-started/hands-on/create-nosql-table/
+
+Redshift Console Walkthrough:
+https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-launch-sample-cluster.html
+
+DMS Walkthrough:
+https://docs.aws.amazon.com/dms/latest/sbs/DMS-SBS-Welcome.html
+
+MongoDB to DocumentDB:
+https://docs.aws.amazon.com/dms/latest/userguide/target.docdb.tutorial.html
+
+AuroraDB Creation:
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html
+
+DynamoDB Calculation:
+https://zaccharles.github.io/dynamodb-calculator/
